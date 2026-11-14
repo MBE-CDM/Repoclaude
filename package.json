@@ -1,0 +1,13 @@
+{
+  "name": "testhub",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": ["server", "web"],
+  "scripts": {
+    "dev:server": "npm -w server run dev",
+    "dev:web": "npm -w web run dev",
+    "build": "npm -w web run build && npm -w server run build",
+    "test": "npm -w server test",
+    "start": "npm -w server start"
+  }
+}

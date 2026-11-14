@@ -1,0 +1,42 @@
+{
+  "name": "@testhub/server",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "start": "tsx src/main.ts",
+    "build": "tsc --noEmit -p .",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.4.3",
+    "@fastify/static": "^10.1.11",
+    "better-sqlite3": "^13.2.0",
+    "croner": "^11.0.1",
+    "fast-xml-parser": "^5.12.1",
+    "fastify": "^5.12.8",
+    "jsonpath-plus": "^11.3.0",
+    "mongodb": "^7.9.0",
+    "mssql": "^12.7.14",
+    "mysql2": "^3.24.6",
+    "oracledb": "^26.0.0",
+    "pg": "^8.23.1",
+    "playwright": "^1.63.0",
+    "ssh2": "^1.17.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/mssql": "^12.3.0",
+    "@types/node": "^26.6.6",
+    "@types/oracledb": "^26.0.1",
+    "@types/pg": "^8.23.1",
+    "@types/ssh2": "^1.15.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  },
+  "optionalDependencies": {
+    "ibm_db": "^4.1.1"
+  }
+}
